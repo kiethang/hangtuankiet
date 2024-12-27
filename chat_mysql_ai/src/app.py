@@ -1,4 +1,4 @@
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 from langchain_core.messages import AIMessage, HumanMessage
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
@@ -9,7 +9,7 @@ import streamlit as st
 import os
 
 # Load environment variables first
-load_dotenv()
+#load_dotenv()
 
 # Validate Azure OpenAI configuration
 if not all([os.getenv('AZURE_OPENAI_ENDPOINT'),
